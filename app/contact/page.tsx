@@ -19,27 +19,24 @@ export default function ContactPage() {
   const contactInfo = [
     {
       icon: Phone,
-      label: t.contact.tollFree,
+      label: t.contact.phone,
       value: SITE_CONFIG.phone,
-      detail: t.contact.tollFreeDetail,
-    },
-    {
-      icon: Phone,
-      label: t.contact.direct,
-      value: agent.directPhone,
-      detail: t.contact.directDetail,
+      detail: t.contact.phoneDetail,
+      href: `tel:${SITE_CONFIG.phone.replace(/-/g, "")}`,
     },
     {
       icon: Mail,
       label: t.contact.email,
       value: SITE_CONFIG.email,
       detail: t.contact.emailDetail,
+      href: `mailto:${SITE_CONFIG.email}`,
     },
     {
       icon: Globe,
       label: t.contact.website,
       value: "tpensions.com",
       detail: t.contact.websiteDetail,
+      href: "https://tpensions.com",
     },
     {
       icon: Award,
@@ -72,7 +69,7 @@ export default function ContactPage() {
             <div className="lg:col-span-2 space-y-4">
               {contactInfo.map((item) => {
                 const Icon = item.icon;
-                return (
+                const content = (
                   <Card key={item.label}>
                     <CardContent className="flex items-start gap-4 pt-2">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
@@ -90,6 +87,23 @@ export default function ContactPage() {
                     </CardContent>
                   </Card>
                 );
+
+                if (item.href) {
+                  return (
+                    <a
+                      key={item.label}
+                      href={item.href}
+                      className="block transition-opacity hover:opacity-80"
+                      {...(item.href.startsWith("http")
+                        ? { target: "_blank", rel: "noopener noreferrer" }
+                        : {})}
+                    >
+                      {content}
+                    </a>
+                  );
+                }
+
+                return content;
               })}
             </div>
           </div>

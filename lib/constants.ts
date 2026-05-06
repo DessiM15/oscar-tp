@@ -3,22 +3,21 @@ export const SITE_CONFIG = {
   description:
     "Expert pension consulting and retirement planning for educators. Maximize your benefits and secure your future.",
   url: "https://tpensions.com",
-  phone: "1-800-474-1440",
-  email: "os.j.garcia@gmail.com",
+  phone: "956-335-0488",
+  email: "ogarcia@tpension.com",
   agent: {
     name: "Oscar Garcia",
     title: "Financial Educator",
-    license: "TBD",
-    directPhone: "956.774.4826",
-    officePhone: "800.474.1440",
+    license: "1792345",
+    phone: "956-335-0488",
   },
   locations: [
     {
-      name: "South Lake Office",
-      address: "330 Morrison Park Dr",
-      city: "South Lake",
+      name: "San Juan Office",
+      address: "502 N Veterans Blvd Suite A",
+      city: "San Juan",
       state: "TX",
-      zip: "76092",
+      zip: "78589",
     },
   ],
 } as const;
@@ -32,4 +31,4 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/contact" },
 ] as const;
 
-export const FORMSPREE_FORM_ID = "YOUR_FORMSPREE_FORM_ID";
+export const CALENDAR_LINK = ""; // TODO: Add Oscar's calendar link when provided

@@ -330,7 +330,7 @@ const es: Translations = {
     incomeGapDetail:
       "La porción de su salario no cubierta por su pensión",
     incomeGapCta:
-      "¿Quiere cerrar esta brecha? Llame a Oscar G. al 956.774.4826 para explorar sus opciones.",
+      "¿Quiere cerrar esta brecha? Llame a Oscar G. al 956-335-0488 para explorar sus opciones.",
     disclaimer:
       "Esta calculadora proporciona solo estimaciones y no tiene en cuenta los ajustes por costo de vida, penalidades por jubilación anticipada o reglas específicas del plan. Consulte con uno de nuestros asesores para un análisis personalizado.",
     ctaTitle: "¿Desea un Análisis Personalizado?",
@@ -347,15 +347,13 @@ const es: Translations = {
     pageTitle: "Contáctenos",
     pageSubtitle:
       "¿Listo para dar el siguiente paso? Comuníquese para una consulta gratuita y sin compromiso con",
-    tollFree: "Línea Gratuita",
-    tollFreeDetail: "Lun-Vie, 8am-6pm",
-    direct: "Directo",
-    directDetail: "Contacte a Oscar G.",
+    phone: "Teléfono",
+    phoneDetail: "Lun-Vie, 8am-6pm",
     email: "Correo Electrónico",
     emailDetail: "Respondemos dentro de 24 horas",
     website: "Sitio Web",
     websiteDetail: "Conozca más sobre nuestros servicios",
-    license: "Licencia",
+    license: "Licencia de Texas",
     locationsTitle: "Nuestras Ubicaciones",
     locationsSubtitle:
       "Sirviendo a educadores desde nuestra oficina en Texas.",
@@ -380,24 +378,30 @@ const es: Translations = {
     topicSpousal: "Planificación Conyugal",
     topicTax: "Estrategia Fiscal",
     topicEarly: "Jubilación Anticipada",
+    topicRoth: "Roth",
+    topicInsurance: "Seguros",
     topicOther: "Otro",
     message: "Mensaje",
     messagePlaceholder:
       "Cuéntenos sobre su situación y cómo podemos ayudarle...",
     sending: "Enviando...",
     send: "Enviar Mensaje",
-    successTitle: "Mensaje Enviado",
+    successTitle: "¡Mensaje Enviado!",
     successMessage:
       "Gracias por comunicarse. Uno de nuestros asesores se comunicará con usted dentro de un día hábil.",
+    scheduleTitle: "Programe una Llamada",
+    scheduleMessage:
+      "¿Desea reservar un horario para hablar? Elija una fecha y hora que le convenga.",
+    scheduleButton: "Abrir Calendario",
+    calendarComingSoon: "¡La programación por calendario estará disponible pronto! Mientras tanto, nos comunicaremos con usted directamente.",
   },
 
   // Pie de Página
   footer: {
     quickLinks: "Enlaces Rápidos",
     contactTitle: "Contacto",
-    licenseNo: "Licencia No.",
-    directLabel: "Directo:",
-    officeLabel: "Oficina:",
+    licenseNo: "Licencia TX No.",
+    phoneLabel: "Teléfono:",
     copyright: "Todos los derechos reservados.",
     disclaimer:
       "Este sitio proporciona información general y no constituye asesoramiento financiero.",

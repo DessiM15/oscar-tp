@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, DM_Sans, Source_Serif_4 } from "next/font/google";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ClickToCall } from "@/components/click-to-call";
 import { LanguageProvider } from "@/lib/language-context";
 import { SITE_CONFIG } from "@/lib/constants";
 import "./globals.css";
@@ -47,6 +48,7 @@ export default function RootLayout({
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
+          <ClickToCall />
         </LanguageProvider>
       </body>
     </html>

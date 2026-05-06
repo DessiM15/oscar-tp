@@ -129,7 +129,7 @@ export default function DistrictsPage() {
                 </div>
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <Phone className="h-4 w-4 text-primary" />
-                  <span>888-498-6870</span>
+                  <a href="tel:9563350488" className="hover:text-primary transition-colors">956-335-0488</a>
                 </div>
               </div>
             </div>
@@ -171,7 +171,10 @@ export default function DistrictsPage() {
               {t.districts.scheduleConsultation}
             </Link>
             <div className="text-sm text-muted-foreground">
-              {t.districts.orCallUs} <span className="font-semibold text-foreground">1-800-474-1440</span>
+              {t.districts.orCallUs}{" "}
+              <a href="tel:9563350488" className="font-semibold text-foreground hover:text-primary transition-colors">
+                956-335-0488
+              </a>
             </div>
           </div>
         </div>

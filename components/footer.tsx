@@ -58,14 +58,13 @@ export function Footer() {
               <p className="text-sm text-background/70">
                 {agent.title} | {t.footer.licenseNo} {agent.license}
               </p>
-              <div className="flex items-center gap-2.5 text-base text-background/80">
+              <a
+                href={`tel:${SITE_CONFIG.phone.replace(/-/g, "")}`}
+                className="flex items-center gap-2.5 text-base text-background/80 hover:text-primary transition-colors"
+              >
                 <Phone className="h-4 w-4 text-primary" />
-                <span>{t.footer.directLabel} {agent.directPhone}</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-base text-background/80">
-                <Phone className="h-4 w-4 text-primary" />
-                <span>{t.footer.officeLabel} {agent.officePhone}</span>
-              </div>
+                <span>{t.footer.phoneLabel} {SITE_CONFIG.phone}</span>
+              </a>
             </div>
           </div>
         </div>

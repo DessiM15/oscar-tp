@@ -330,7 +330,7 @@ const en = {
     incomeGapDetail:
       "The portion of your salary not covered by your pension",
     incomeGapCta:
-      "Want to close this gap? Call Oscar G. at 956.774.4826 to explore your options.",
+      "Want to close this gap? Call Oscar G. at 956-335-0488 to explore your options.",
     disclaimer:
       "This calculator provides estimates only and does not account for cost-of-living adjustments, early retirement penalties, or plan-specific rules. Please consult with one of our advisors for a personalized analysis.",
     ctaTitle: "Want a Personalized Analysis?",
@@ -347,15 +347,13 @@ const en = {
     pageTitle: "Contact Us",
     pageSubtitle:
       "Ready to take the next step? Reach out for a free, no-obligation consultation with",
-    tollFree: "Toll-Free",
-    tollFreeDetail: "Mon-Fri, 8am-6pm",
-    direct: "Direct",
-    directDetail: "Contact Oscar G.",
+    phone: "Phone",
+    phoneDetail: "Mon-Fri, 8am-6pm",
     email: "Email",
     emailDetail: "We respond within 24 hours",
     website: "Website",
     websiteDetail: "Learn more about our services",
-    license: "License",
+    license: "Texas License",
     locationsTitle: "Our Locations",
     locationsSubtitle:
       "Serving educators from our Texas office.",
@@ -380,24 +378,30 @@ const en = {
     topicSpousal: "Spousal Planning",
     topicTax: "Tax Strategy",
     topicEarly: "Early Retirement",
+    topicRoth: "Roth",
+    topicInsurance: "Insurance",
     topicOther: "Other",
     message: "Message",
     messagePlaceholder:
       "Tell us about your situation and how we can help...",
     sending: "Sending...",
     send: "Send Message",
-    successTitle: "Message Sent",
+    successTitle: "Message Sent!",
     successMessage:
       "Thank you for reaching out. One of our advisors will get back to you within one business day.",
+    scheduleTitle: "Schedule a Call",
+    scheduleMessage:
+      "Want to book a time to talk? Pick a date and time that works for you.",
+    scheduleButton: "Open Calendar",
+    calendarComingSoon: "Calendar scheduling coming soon! In the meantime, we'll reach out to you directly.",
   },
 
   // Footer
   footer: {
     quickLinks: "Quick Links",
     contactTitle: "Contact",
-    licenseNo: "License No.",
-    directLabel: "Direct:",
-    officeLabel: "Office:",
+    licenseNo: "TX License No.",
+    phoneLabel: "Phone:",
     copyright: "All rights reserved.",
     disclaimer:
       "This site provides general information and does not constitute financial advice.",
