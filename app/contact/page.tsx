@@ -1,16 +1,17 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Phone, Globe, Award, Mail, MapPin } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { ContactForm } from "@/components/contact-form";
-import { SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG, CALENDAR_LINK } from "@/lib/constants";
 import { useTranslation } from "@/lib/language-context";
 
 const { agent, locations } = SITE_CONFIG;
 
 export default function ContactPage() {
   const { t } = useTranslation();
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   useEffect(() => {
     document.title = `${t.contact.metaTitle} | Teacher's Pension`;
@@ -63,7 +64,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
             <div className="lg:col-span-3">
-              <ContactForm />
+              <ContactForm onSubmitted={() => setFormSubmitted(true)} />
             </div>
 
             <div className="lg:col-span-2 space-y-4">
@@ -107,6 +108,24 @@ export default function ContactPage() {
               })}
             </div>
           </div>
+
+          {formSubmitted && (
+            <Card className="mt-8">
+              <CardContent className="p-0">
+                <h3 className="text-lg font-semibold text-foreground text-center pt-6 pb-2">
+                  {t.contactForm.bookingLabel}
+                </h3>
+                <iframe
+                  src={CALENDAR_LINK}
+                  width="100%"
+                  height="700"
+                  frameBorder="0"
+                  title={t.contactForm.bookingLabel}
+                  className="rounded-b-xl"
+                />
+              </CardContent>
+            </Card>
+          )}
         </div>
       </section>
 

@@ -386,9 +386,10 @@ const es: Translations = {
       "Cuéntenos sobre su situación y cómo podemos ayudarle...",
     sending: "Enviando...",
     send: "Enviar Mensaje",
-    successTitle: "¡Mensaje Enviado!",
+    successTitle: "Gracias! Ahora Agenda Tu Reunion",
     successMessage:
-      "Gracias por comunicarse. Uno de nuestros asesores se comunicará con usted dentro de un día hábil.",
+      "Tu informacion ha sido enviada. Elige un horario abajo para reunirte con Oscar y discutir tus opciones.",
+    bookingLabel: "Agenda Tu Consulta Gratuita",
     scheduleTitle: "Programe una Llamada",
     scheduleMessage:
       "¿Desea reservar un horario para hablar? Elija una fecha y hora que le convenga.",

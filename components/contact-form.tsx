@@ -6,93 +6,56 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, Calendar, Clock } from "lucide-react";
+import { CheckCircle, ChevronDown } from "lucide-react";
 import { useTranslation } from "@/lib/language-context";
-import { CALENDAR_LINK } from "@/lib/constants";
+import { SITE_CONFIG } from "@/lib/constants";
 
-export function ContactForm() {
-  const [submitting, setSubmitting] = useState(false);
+interface ContactFormProps {
+  onSubmitted?: () => void;
+}
+
+export function ContactForm({ onSubmitted }: ContactFormProps) {
   const [succeeded, setSucceeded] = useState(false);
-  const [error, setError] = useState("");
   const { t } = useTranslation();
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitting(true);
-    setError("");
 
     const form = e.currentTarget;
-    const data = {
-      firstName: (form.elements.namedItem("firstName") as HTMLInputElement).value,
-      lastName: (form.elements.namedItem("lastName") as HTMLInputElement).value,
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      phone: (form.elements.namedItem("phone") as HTMLInputElement).value,
-      topic: (form.elements.namedItem("topic") as HTMLSelectElement).value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
-    };
+    const firstName = (form.elements.namedItem("firstName") as HTMLInputElement).value;
+    const lastName = (form.elements.namedItem("lastName") as HTMLInputElement).value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const phone = (form.elements.namedItem("phone") as HTMLInputElement).value;
+    const topicSelect = form.elements.namedItem("topic") as HTMLSelectElement;
+    const topicText = topicSelect.options[topicSelect.selectedIndex].text;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
 
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
+    const subject = encodeURIComponent(`New Lead: ${topicText}`);
+    const body = encodeURIComponent(
+      `Name: ${firstName} ${lastName}\nPhone: ${phone}\nEmail: ${email}\nService Interest: ${topicText}\n\nMessage:\n${message}`
+    );
 
-      if (!res.ok) throw new Error("Failed to send");
-      setSucceeded(true);
-    } catch {
-      setError("Something went wrong. Please try again or call us directly.");
-    } finally {
-      setSubmitting(false);
-    }
+    const mailtoLink = `mailto:${SITE_CONFIG.email}?subject=${subject}&body=${body}`;
+    window.open(mailtoLink, "_blank");
+
+    setSucceeded(true);
+    onSubmitted?.();
   }
 
   if (succeeded) {
     return (
-      <div className="space-y-6">
-        {/* Step 1: Success */}
-        <Card>
-          <CardContent className="flex flex-col items-center justify-center py-12 text-center">
-            <CheckCircle className="h-12 w-12 text-accent mb-4" />
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              {t.contactForm.successTitle}
-            </h3>
-            <p className="text-muted-foreground">
-              {t.contactForm.successMessage}
-            </p>
-          </CardContent>
-        </Card>
-
-        {/* Step 2: Calendar */}
-        <Card>
-          <CardContent className="flex flex-col items-center justify-center py-12 text-center">
-            <Calendar className="h-12 w-12 text-primary mb-4" />
-            <h3 className="text-xl font-semibold text-foreground mb-2">
-              {t.contactForm.scheduleTitle}
-            </h3>
-            {CALENDAR_LINK ? (
-              <>
-                <p className="text-muted-foreground mb-6">
-                  {t.contactForm.scheduleMessage}
-                </p>
-                <a
-                  href={CALENDAR_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-                >
-                  <Clock className="h-4 w-4" />
-                  {t.contactForm.scheduleButton}
-                </a>
-              </>
-            ) : (
-              <p className="text-muted-foreground">
-                {t.contactForm.calendarComingSoon}
-              </p>
-            )}
-          </CardContent>
-        </Card>
-      </div>
+      <Card>
+        <CardContent className="flex flex-col items-center justify-center py-12 text-center">
+          <CheckCircle className="h-12 w-12 text-green-500 mb-4" />
+          <h3 className="text-xl font-semibold text-foreground mb-2">
+            {t.contactForm.successTitle}
+          </h3>
+          <p className="text-muted-foreground mb-6">
+            {t.contactForm.successMessage}
+          </p>
+          <ChevronDown className="h-8 w-8 text-primary animate-bounce" />
+        </CardContent>
+      </Card>
     );
   }
 
@@ -179,12 +142,8 @@ export function ContactForm() {
             />
           </div>
 
-          {error && (
-            <p className="text-sm text-destructive">{error}</p>
-          )}
-
-          <Button type="submit" disabled={submitting} size="lg" className="w-full">
-            {submitting ? t.contactForm.sending : t.contactForm.send}
+          <Button type="submit" size="lg" className="w-full">
+            {t.contactForm.send}
           </Button>
         </form>
       </CardContent>

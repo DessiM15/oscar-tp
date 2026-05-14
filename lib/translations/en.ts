@@ -386,9 +386,10 @@ const en = {
       "Tell us about your situation and how we can help...",
     sending: "Sending...",
     send: "Send Message",
-    successTitle: "Message Sent!",
+    successTitle: "Thanks! Now Book Your Meeting",
     successMessage:
-      "Thank you for reaching out. One of our advisors will get back to you within one business day.",
+      "Your info has been sent. Pick a time below to meet with Oscar and discuss your options.",
+    bookingLabel: "Schedule Your Free Consultation",
     scheduleTitle: "Schedule a Call",
     scheduleMessage:
       "Want to book a time to talk? Pick a date and time that works for you.",

@@ -31,4 +31,4 @@ export const NAV_LINKS = [
   { label: "Contact", href: "/contact" },
 ] as const;
 
-export const CALENDAR_LINK = ""; // TODO: Add Oscar's calendar link when provided
+export const CALENDAR_LINK = "https://calendly.com/ogarcia-19/new-meeting-with-oscar";
