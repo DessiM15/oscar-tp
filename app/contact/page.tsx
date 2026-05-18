@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { Phone, Globe, Award, Mail, MapPin } from "lucide-react";
+import { useEffect } from "react";
+import { Phone, Globe, Award, Mail, MapPin, Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { ContactForm } from "@/components/contact-form";
+import { Button } from "@/components/ui/button";
 import { SITE_CONFIG, CALENDAR_LINK } from "@/lib/constants";
 import { useTranslation } from "@/lib/language-context";
 
@@ -11,7 +11,6 @@ const { agent, locations } = SITE_CONFIG;
 
 export default function ContactPage() {
   const { t } = useTranslation();
-  const [formSubmitted, setFormSubmitted] = useState(false);
 
   useEffect(() => {
     document.title = `${t.contact.metaTitle} | Teacher's Pension`;
@@ -64,7 +63,30 @@ export default function ContactPage() {
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
             <div className="lg:col-span-3">
-              <ContactForm onSubmitted={() => setFormSubmitted(true)} />
+              <Card>
+                <CardContent className="flex flex-col items-center text-center gap-6 py-12 px-6">
+                  <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                    <Calendar className="h-8 w-8 text-primary" />
+                  </div>
+                  <div>
+                    <h2 className="text-2xl font-bold text-foreground">
+                      {t.contactForm.bookingLabel}
+                    </h2>
+                    <p className="mt-2 text-muted-foreground">
+                      {t.contactForm.scheduleMessage}
+                    </p>
+                  </div>
+                  <a
+                    href={CALENDAR_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button size="lg" className="text-lg px-8 py-6">
+                      {t.contactForm.scheduleButton}
+                    </Button>
+                  </a>
+                </CardContent>
+              </Card>
             </div>
 
             <div className="lg:col-span-2 space-y-4">
@@ -108,24 +130,6 @@ export default function ContactPage() {
               })}
             </div>
           </div>
-
-          {formSubmitted && (
-            <Card className="mt-8">
-              <CardContent className="p-0">
-                <h3 className="text-lg font-semibold text-foreground text-center pt-6 pb-2">
-                  {t.contactForm.bookingLabel}
-                </h3>
-                <iframe
-                  src={CALENDAR_LINK}
-                  width="100%"
-                  height="700"
-                  frameBorder="0"
-                  title={t.contactForm.bookingLabel}
-                  className="rounded-b-xl"
-                />
-              </CardContent>
-            </Card>
-          )}
         </div>
       </section>
 
