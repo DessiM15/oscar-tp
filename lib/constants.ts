@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
     "Expert pension consulting and retirement planning for educators. Maximize your benefits and secure your future.",
   url: "https://tpensions.com",
   phone: "956-335-0488",
-  email: "og@tpensions.com",
+  email: "ogarcia@tpensions.com",
   agent: {
     name: "Oscar Garcia",
     title: "Financial Educator",
