@@ -21,9 +21,9 @@ export function Footer() {
             <Image
               src="/images/logo.png"
               alt="OG Insurance Solutions"
-              width={200}
-              height={60}
-              className="h-12 w-auto mb-5"
+              width={260}
+              height={80}
+              className="h-16 w-auto mb-5"
             />
             <p className="text-base text-background/70 max-w-xs leading-relaxed">
               {SITE_CONFIG.description}

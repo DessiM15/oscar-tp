@@ -42,9 +42,9 @@ export function Navbar() {
           <Image
             src="/images/logo.png"
             alt="OG Insurance Solutions"
-            width={196}
-            height={60}
-            className="h-12 w-auto"
+            width={260}
+            height={80}
+            className="h-16 w-auto"
             priority
           />
           <div className="hidden sm:block">
