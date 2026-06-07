@@ -97,7 +97,7 @@ const es: Translations = {
     testimonialsSubtitle:
       "Escuche a maestros y administradores que planificaron su jubilación con nuestra ayuda.",
     testimonial1Quote:
-      "No tenía idea de que era elegible para beneficios adicionales hasta que el equipo de Teacher's Pension revisó mi caso. Me ayudaron a asegurar miles de dólares más por año en mi jubilación.",
+      "No tenía idea de que era elegible para beneficios adicionales hasta que el equipo de OG Insurance Solutions revisó mi caso. Me ayudaron a asegurar miles de dólares más por año en mi jubilación.",
     testimonial1Name: "Sarah M.",
     testimonial1Role: "Maestra de Preparatoria Jubilada, 32 Años",
     testimonial2Quote:
@@ -105,7 +105,7 @@ const es: Translations = {
     testimonial2Name: "James T.",
     testimonial2Role: "Director de Secundaria, 28 Años",
     testimonial3Quote:
-      "Mi esposo y yo ambos enseñamos, y coordinar nuestras pensiones parecía imposible. Teacher's Pension lo hizo sencillo y nos salvó de errores costosos.",
+      "Mi esposo y yo ambos enseñamos, y coordinar nuestras pensiones parecía imposible. OG Insurance Solutions lo hizo sencillo y nos salvó de errores costosos.",
     testimonial3Name: "Linda & Robert K.",
     testimonial3Role: "Educadores de Primaria, 55 Años Combinados",
     ctaTitle: "¿Listo para Planificar Su Jubilación?",
@@ -118,19 +118,19 @@ const es: Translations = {
   about: {
     metaTitle: "Nosotros",
     metaDescription:
-      "Conozca Teacher's Pension — nuestra misión de educar a educadores, nuestras raíces familiares en la educación pública y nuestro compromiso con la orientación imparcial de jubilación.",
-    pageTitle: "Acerca de Teacher's Pension",
+      "Conozca OG Insurance Solutions — nuestra misión de educar a educadores, nuestras raíces familiares en la educación pública y nuestro compromiso con la orientación imparcial de jubilación.",
+    pageTitle: "Acerca de OG Insurance Solutions",
     pageSubtitle:
       "Educando a educadores — porque las personas que dedican sus carreras a nuestros hijos merecen orientación experta al planificar su futuro.",
     storyTitle: "Nuestra Historia",
     storyP1:
-      "Teacher's Pension fue fundada con una creencia simple: las personas que dedican sus carreras a educar a nuestros hijos merecen orientación experta cuando llega el momento de planificar su propio futuro.",
+      "OG Insurance Solutions fue fundada con una creencia simple: las personas que dedican sus carreras a educar a nuestros hijos merecen orientación experta cuando llega el momento de planificar su propio futuro.",
     storyP2:
       "Somos una empresa familiar con hijos en el sistema de escuelas públicas y miembros de la familia que son educadores y administradores. Conocemos de primera mano el valor que los educadores aportan a nuestras comunidades — y reconocemos la necesidad de educación financiera de alta calidad tanto para estudiantes como para empleados.",
     storyP3:
-      'Durante más de una década, Teacher\'s Pension ha perseguido nuestra misión de "educar a educadores" proporcionando educación de jubilación de alta calidad e imparcial a educadores en todo el país. Somos una firma de consultoría y un proveedor de educación que trabaja con muchos sub-proveedores y proveedores de inversión para ayudar a los empleados a planificar y prepararse para la jubilación a través del poder de la educación — no solo otro discurso de ventas.',
+      'Durante más de una década, OG Insurance Solutions ha perseguido nuestra misión de "educar a educadores" proporcionando educación de jubilación de alta calidad e imparcial a educadores en todo el país. Somos una firma de consultoría y un proveedor de educación que trabaja con muchos sub-proveedores y proveedores de inversión para ayudar a los empleados a planificar y prepararse para la jubilación a través del poder de la educación — no solo otro discurso de ventas.',
     storyP4:
-      "Teacher's Pension apoya a los distritos en crear un ambiente que aboga por una jubilación digna para todos los empleados del distrito a través de la entrega de educación de jubilación sin costo.",
+      "OG Insurance Solutions apoya a los distritos en crear un ambiente que aboga por una jubilación digna para todos los empleados del distrito a través de la entrega de educación de jubilación sin costo.",
     valuesTitle: "Lo Que Nos Impulsa",
     valuesSubtitle:
       "Nuestros valores dan forma a cada interacción, cada recomendación y cada plan que construimos.",
@@ -244,15 +244,15 @@ const es: Translations = {
   districts: {
     metaTitle: "Para Distritos",
     metaDescription:
-      "Teacher's Pension proporciona educación de bienestar financiero sin costo y una plataforma neutral de 403(b)/457 para distritos escolares. Consulte con nuestro equipo de superintendentes jubilados.",
+      "OG Insurance Solutions proporciona educación de bienestar financiero sin costo y una plataforma neutral de 403(b)/457 para distritos escolares. Consulte con nuestro equipo de superintendentes jubilados.",
     pageTitle: "Para Distritos Escolares",
     pageSubtitle:
       "Apoyamos a los distritos en crear un ambiente que aboga por una jubilación digna para todos los empleados — a través de educación de jubilación sin costo e imparcial.",
     partnerTitle: "Un Socio para Su Distrito",
     partnerP1:
-      "Teacher's Pension es una firma de consultoría y proveedor de educación que trabaja con distritos escolares para entregar educación de bienestar financiero a cada empleado — sin costo para el distrito o sus empleados.",
+      "OG Insurance Solutions es una firma de consultoría y proveedor de educación que trabaja con distritos escolares para entregar educación de bienestar financiero a cada empleado — sin costo para el distrito o sus empleados.",
     partnerP2:
-      "A diferencia de los proveedores tradicionales que lideran con ventas de productos, Teacher's Pension lidera con educación. Trabajamos con muchos sub-proveedores y proveedores de inversión para ayudar a los empleados a planificar y prepararse para la jubilación a través del poder del conocimiento — no un discurso de ventas.",
+      "A diferencia de los proveedores tradicionales que lideran con ventas de productos, OG Insurance Solutions lidera con educación. Trabajamos con muchos sub-proveedores y proveedores de inversión para ayudar a los empleados a planificar y prepararse para la jubilación a través del poder del conocimiento — no un discurso de ventas.",
     partnerP3:
       "Nuestro equipo incluye superintendentes jubilados que entienden las operaciones del distrito, las necesidades de los empleados y las complejidades de los sistemas de jubilación de la educación pública desde adentro.",
     howWeHelpTitle: "Cómo Ayudamos a los Distritos",
@@ -291,7 +291,7 @@ const es: Translations = {
       "Apoyo en la inscripción y educación continua durante todo el año escolar",
     bringWellnessTitle: "Lleve el Bienestar Financiero a Su Distrito",
     bringWellnessDesc:
-      "Ya sea superintendente, director de recursos humanos o coordinador de beneficios, nos encantaría discutir cómo Teacher's Pension puede apoyar a sus empleados.",
+      "Ya sea superintendente, director de recursos humanos o coordinador de beneficios, nos encantaría discutir cómo OG Insurance Solutions puede apoyar a sus empleados.",
     scheduleConsultation: "Programe una Consulta de Distrito",
     orCallUs: "O llámenos al",
     ctaTitle: "Educación Primero, Siempre",

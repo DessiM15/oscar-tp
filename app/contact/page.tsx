@@ -13,7 +13,7 @@ export default function ContactPage() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = `${t.contact.metaTitle} | Teacher's Pension`;
+    document.title = `${t.contact.metaTitle} | OG Insurance Solutions`;
   }, [t]);
 
   const contactInfo = [

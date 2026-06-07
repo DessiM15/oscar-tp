@@ -41,7 +41,7 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/images/logo.png"
-            alt="Teacher's Pension"
+            alt="OG Insurance Solutions"
             width={196}
             height={60}
             className="h-12 w-auto"

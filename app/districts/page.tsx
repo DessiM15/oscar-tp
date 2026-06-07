@@ -25,7 +25,7 @@ export default function DistrictsPage() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = `${t.districts.metaTitle} | Teacher's Pension`;
+    document.title = `${t.districts.metaTitle} | OG Insurance Solutions`;
   }, [t]);
 
   const districtBenefits = [

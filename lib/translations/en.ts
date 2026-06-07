@@ -95,7 +95,7 @@ const en = {
     testimonialsSubtitle:
       "Hear from teachers and administrators who planned their retirement with our help.",
     testimonial1Quote:
-      "I had no idea I was eligible for additional benefits until the team at Teacher's Pension reviewed my case. They helped me secure thousands more per year in retirement.",
+      "I had no idea I was eligible for additional benefits until the team at OG Insurance Solutions reviewed my case. They helped me secure thousands more per year in retirement.",
     testimonial1Name: "Sarah M.",
     testimonial1Role: "Retired High School Teacher, 32 Years",
     testimonial2Quote:
@@ -103,7 +103,7 @@ const en = {
     testimonial2Name: "James T.",
     testimonial2Role: "Middle School Principal, 28 Years",
     testimonial3Quote:
-      "My husband and I both teach, and coordinating our pensions seemed impossible. Teacher's Pension made it straightforward and saved us from costly mistakes.",
+      "My husband and I both teach, and coordinating our pensions seemed impossible. OG Insurance Solutions made it straightforward and saved us from costly mistakes.",
     testimonial3Name: "Linda & Robert K.",
     testimonial3Role: "Elementary Educators, Combined 55 Years",
     ctaTitle: "Ready to Plan Your Retirement?",
@@ -116,19 +116,19 @@ const en = {
   about: {
     metaTitle: "About",
     metaDescription:
-      "Learn about Teacher's Pension — our mission to educate educators, our family roots in public education, and our commitment to unbiased retirement guidance.",
-    pageTitle: "About Teacher's Pension",
+      "Learn about OG Insurance Solutions — our mission to educate educators, our family roots in public education, and our commitment to unbiased retirement guidance.",
+    pageTitle: "About OG Insurance Solutions",
     pageSubtitle:
       "Educating educators — because the people who dedicate their careers to our children deserve expert guidance when planning their futures.",
     storyTitle: "Our Story",
     storyP1:
-      "Teacher's Pension was founded on a simple belief: the people who dedicate their careers to educating our children deserve expert guidance when it is time to plan their own futures.",
+      "OG Insurance Solutions was founded on a simple belief: the people who dedicate their careers to educating our children deserve expert guidance when it is time to plan their own futures.",
     storyP2:
       "We are a family-owned business with children in the public school system and family members who are educators and administrators. We know firsthand the value that educators bring to our communities — and we recognize the need for high-quality financial education for both students and employees.",
     storyP3:
-      'For over a decade, Teacher\'s Pension has been pursuing our mission of "educating educators" by providing high-quality and unbiased retirement education to educators across the country. We are a consulting firm and an education provider that works with many sub-vendors and investment providers to help employees plan and prepare for retirement through the power of education — not just another sales pitch.',
+      'For over a decade, OG Insurance Solutions has been pursuing our mission of "educating educators" by providing high-quality and unbiased retirement education to educators across the country. We are a consulting firm and an education provider that works with many sub-vendors and investment providers to help employees plan and prepare for retirement through the power of education — not just another sales pitch.',
     storyP4:
-      "Teacher's Pension supports districts in creating an environment that advocates for dignified retirement for all district employees through the delivery of no-cost retirement education.",
+      "OG Insurance Solutions supports districts in creating an environment that advocates for dignified retirement for all district employees through the delivery of no-cost retirement education.",
     valuesTitle: "What Drives Us",
     valuesSubtitle:
       "Our values shape every interaction, every recommendation, and every plan we build.",
@@ -245,15 +245,15 @@ const en = {
   districts: {
     metaTitle: "For Districts",
     metaDescription:
-      "Teacher's Pension provides no-cost financial wellness education and a vendor-neutral 403(b)/457 platform for school districts. Consult with our team of retired superintendents.",
+      "OG Insurance Solutions provides no-cost financial wellness education and a vendor-neutral 403(b)/457 platform for school districts. Consult with our team of retired superintendents.",
     pageTitle: "For School Districts",
     pageSubtitle:
       "We support districts in creating an environment that advocates for dignified retirement for all employees — through no-cost, unbiased retirement education.",
     partnerTitle: "A Partner for Your District",
     partnerP1:
-      "Teacher's Pension is a consulting firm and education provider that works with school districts to deliver financial wellness education to every employee — at no cost to the district or its employees.",
+      "OG Insurance Solutions is a consulting firm and education provider that works with school districts to deliver financial wellness education to every employee — at no cost to the district or its employees.",
     partnerP2:
-      "Unlike traditional vendors who lead with product sales, Teacher's Pension leads with education. We work with many sub-vendors and investment providers to help employees plan and prepare for retirement through the power of knowledge — not a sales pitch.",
+      "Unlike traditional vendors who lead with product sales, OG Insurance Solutions leads with education. We work with many sub-vendors and investment providers to help employees plan and prepare for retirement through the power of knowledge — not a sales pitch.",
     partnerP3:
       "Our team includes retired superintendents who understand district operations, employee needs, and the complexities of public education retirement systems from the inside.",
     howWeHelpTitle: "How We Help Districts",
@@ -292,7 +292,7 @@ const en = {
       "Support enrollment and ongoing education throughout the school year",
     bringWellnessTitle: "Bring Financial Wellness to Your District",
     bringWellnessDesc:
-      "Whether you are a superintendent, HR director, or benefits coordinator, we would love to discuss how Teacher's Pension can support your employees.",
+      "Whether you are a superintendent, HR director, or benefits coordinator, we would love to discuss how OG Insurance Solutions can support your employees.",
     scheduleConsultation: "Schedule a District Consultation",
     orCallUs: "Or call us at",
     ctaTitle: "Education First, Always",

@@ -22,7 +22,7 @@ export default function ServicesPage() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = `${t.services.metaTitle} | Teacher's Pension`;
+    document.title = `${t.services.metaTitle} | OG Insurance Solutions`;
   }, [t]);
 
   const services = [

@@ -20,7 +20,7 @@ export function Footer() {
           <div>
             <Image
               src="/images/logo.png"
-              alt="Teacher's Pension"
+              alt="OG Insurance Solutions"
               width={200}
               height={60}
               className="h-12 w-auto mb-5"

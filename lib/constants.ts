@@ -1,5 +1,5 @@
 export const SITE_CONFIG = {
-  name: "Teacher's Pension",
+  name: "OG Insurance Solutions",
   description:
     "Expert pension consulting and retirement planning for educators. Maximize your benefits and secure your future.",
   url: "https://tpensions.com",

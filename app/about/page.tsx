@@ -19,7 +19,7 @@ export default function AboutPage() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = `${t.about.metaTitle} | Teacher's Pension`;
+    document.title = `${t.about.metaTitle} | OG Insurance Solutions`;
   }, [t]);
 
   const values = [

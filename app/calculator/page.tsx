@@ -9,7 +9,7 @@ export default function CalculatorPage() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    document.title = `${t.calculator.metaTitle} | Teacher's Pension`;
+    document.title = `${t.calculator.metaTitle} | OG Insurance Solutions`;
   }, [t]);
 
   return (
